@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="daycare.css">
+    <link rel="stylesheet" href="menu-mobile.css">
+    <title>DescomPink</title>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <nav class="navbar">
+             <a href="#banner">
+                <img class="logo" src="assetsPet/logo2.png" alt="">
+             </a>
+                <nav>
+                    <ul>
+                        <li><a  href="#banner">Home</a></li>
+                        <li><a  href="#desc-moto">Sobre</a></li>
+                        <li><a  href="#planoDayCare">Planos</a></li>
+                        <li><a  href="#footer">Contato</a></li>
+                    </ul>
+                    
+                </nav>
+
+                <div class="menu-hamburguer">
+                    <input type="checkbox" id="menu-hamburguer" class="input-menu-hamburguer">
+
+                    <label for="menu-hamburguer">
+                        <div class="menu">
+                            <span class="hamburguer"></span>
+                        </div>
+                    </label>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="navMobile">
+
+        
+
+        <ul>
+            <br/>
+            <li><a onclick="fecharNav()" href="#banner">Home</a></li>
+            <li><a onclick="fecharNav()" href="#desc-moto">Sobre</a></li>
+            <li><a onclick="fecharNav()" href="#planoDayCare">Planos</a></li>
+            <li><a onclick="fecharNav()" href="#footer">Contato</a></li>
+        </ul>
+
+
+
+
+
+    </nav>
+
+    <section class="banner" id="banner">
+
+        <article class="banner-imagem">
+            <h1>Descom<span style="color: rgb(189, 23, 204);"><b>Pink</b></span><b></b></h1>
+        </article>
+
+    </section>
+
+   
+
+    <!-- MAIN NOVA MOTO  -->
+
+     <main class="nova-moto" id="desc-moto">
+        <section class="nova-moto-image">
+            <figure>
+                <img data-aos="slide-left" data-aos-duration="1500" src="assetsPet/livro.png" alt="">
+            </figure>
+        </section>
+        <section class="nova-moto-text">
+            <article>
+                <h1>Descompink</h1>
+                <p>Plataforma de fácil acesso a um ensino prático e online, destinada a pessoas que buscam concluir seus estudos de forma eficiente e conveniente. Nossa plataforma oferece uma variedade de cursos, materiais didáticos interativos e suporte personalizado, tudo para garantir que cada aluno alcance seus objetivos acadêmicos e profissionais. Seja para terminar o ensino médio, preparar-se para exames importantes ou adquirir novas habilidades, estamos aqui para ajudar a transformar suas aspirações em realidade com flexibilidade e qualidade.</p>
+                <a href="">Acessar</a>
+            </article>
+        </section>
+
+    </main> 
+
+    <!-- DESCRIÇÃO MOTO -->
+
+    <article class="desc-moto">
+        <figcaption class="desc-moto-image">
+            <img data-aos="slide-right" data-aos-duration="1500"
+                src="assetsPet/mochila.png" alt="">
+            <div>
+                <h1>Descomplicando o Ensino</h1>
+                <p>Te Oferecemos:</p>
+            </div>
+        </figcaption>
+
+        <section class="desc-moto-section">
+            <div class="quadradinhos">
+                <img src="icons/chapeu.png" alt="">
+                <p>Professores formados</p>
+            </div>
+            <div class="quadradinhos">
+                <img src="icons/escola.png" alt="">
+                <p>Unidade presencial</p>
+            </div>
+            <div class="quadradinhos">
+                <img src="icons/online.png" alt="">
+                <p>Aulas Online</p>
+            </div>
+            <div class="quadradinhos">
+                <img src="icons/suporte.png" alt="">
+                <p>Suporte</p>
+            </div>
+        </section>
+
+    </article> 
+
+
+    <!-- PLANO DAY CARE -->
+
+   
+        <section class="sectionPlanoDayCare" id="planoDayCare">
+            <h1 class="title">Planos Descompink</h1>
+            <article class="planoDayCare">
+                <figure>
+                    <img src="assetsPet/WhatsApp_Image_2024-06-15_at_14.18.54-removebg-preview.png" alt="">
+                </figure>
+                <button>Tenho interesse</button>
+            </article>
+              
+        </section>
+
+    <!--  -->
+
+    </section>
+    <main class="contato">
+
+        <div>
+            <h1 class="title">Mande um E-mail</h1>
+        </div>
+
+        <div class="class-contato">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5173.653359622681!2d-46.727880111422174!3d-23.520796950033535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20Godoy!5e0!3m2!1spt-BR!2sbr!4v1718252570013!5m2!1spt-BR!2sbr"
+                allowfullscreen=""  frameborder="0" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form class="Contato" id="Contato" onsubmit="submitForm(event)">
+                <div class="inputs">
+                    <input type="email" id="teste" class="input" placeholder="E-mail" required/>
+                    
+                    <input type="text" required id="teste" class="input" placeholder="Número de Telefone" />
+                    <textarea required name="" placeholder="Escreva uma mensagem:" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button>ENVIAR</button>
+            </form>
+        </div>
+    </main>
+   
+
+    <footer id="footer">
+
+        <div>
+            
+            <img class="logo" src="assetsPet/Logo2.png" alt="">
+        </div>
+        <div class="listFooter">
+            <h2>Atendimento</h2>
+            <ul>
+                <li><a target="_blank" href="https://web.whatsapp.com/">Fale conosco</a></li>
+                <li><a href="">Contato</a></li>
+               
+            </ul>
+        </div>
+        <div class="listFooter">
+            <h2>Informações</h2>
+            <ul>
+                <li><a href="">descompink@gmail.com</a></li>
+                <li><a href="">(11)93441-3666</a></li>
+                <li><a href="">R. Guaipá, 678 - Vila Leopoldina, São Paulo - SP, 05089-000</a></li>
+            </ul>
+        </div>
+        
+        <div class="redesSociais">
+            <div>
+                <a target="_blank" href="https://www.facebook.com/">
+                    <img src="icons/face.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a target="_blank" href="https://www.instagram.com/">
+                    <img src="icons/insta.png" alt="">
+                </a>
+            </div>
+            <div>
+               <a target="_blank" href="https://www.tiktok.com/">
+                <img src="icons/tiktok.png" alt="">
+               </a>
+            </div>
+        </div>
+
+        
+
+    </footer>
+
+    <div class="madeby">
+        <p>© 2024 Descompink. Todos os direitos reservados.</p>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+<script src="main.js"></script>
+
+</html>

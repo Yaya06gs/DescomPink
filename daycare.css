@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    scroll-behavior: smooth;
+}
+
+.header {
+    transition: 0.5s ease-in-out;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+.header.scroll {
+    background-color: white;
+}
+.header .navbar #logo{
+    color: rgb(197, 47, 177);
+}
+.header.scroll .navbar a {
+    color: black;
+}
+.header.scroll .navbar ul li a {
+    color: black;
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    align-items: center;
+    width: 100%;
+    transition: 0.2s;
+}
+ .logo{
+    width: 25vw;
+    max-width: 120px;
+}
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.navbar a {
+    font-weight: 500;
+    color: rgb(207, 69, 189);
+    font-size: 2.5rem;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.navbar a:hover {
+    color: rgb(248, 248, 248);
+}
+.navbar ul {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.navbar ul li a {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+.navbar ul li a:hover {
+    color: rgb(197, 47, 177);
+}
+.header.scroll .navbar ul li a:hover {
+    color: rgb(197, 47, 177);
+}
+.header.scroll .navbar a:hover {
+    color: rgb(197, 47, 177);
+}
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar-icons img {
+    cursor: pointer;
+    width: 24x;
+    height: 24px;
+    -webkit-filter: drop-shadow(3px 4px 3px #222);
+    filter: drop-shadow(1px 1px 1px #222222ec);
+}
+
+
+
+
+/* GERAIS */
+.title  {
+    text-align: center;
+    color: rgb(231, 59, 165);
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin-bottom: 7vh;
+}
+button {
+    background-color: rgb(231, 59, 165);
+    border: none;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    padding: 0.7rem 0;
+}
+
+/* BANNER */
+
+.banner {
+    display: flex;
+    height: 100vh;
+}
+.banner .banner-imagem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: no-repeat center/cover url(assetsPet/Design\ sem\ nome.png);
+    padding: 0 15%;
+}
+.banner .banner-imagem h1 {
+    font-weight: 500;
+    color: rgb(240, 223, 223);
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.banner .banner-imagem a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 15px;
+    border-radius: 3px;
+    transition: .5s;
+    border: 1px solid white;
+}
+.banner .banner-imagem a:hover {
+    background-color: rgb(197, 47, 177);
+}
+.banner {
+    display: flex;
+    height: 100vh;
+}
+.sobre-nos
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width:820px) {
+   
+    .navbar ul {
+        display: none;
+    }
+
+    .banner .banner-imagem h1 {
+        font-size: 2.3em;
+    }
+}
+
+/*CARDS*/
+
+.sectionPlanoDayCare{
+    padding: 10vh 0;
+}
+.planoDayCare{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 650px;
+    margin: auto;
+
+}
+.planoDayCare figure{
+    object-fit: contain;
+}
+.planoDayCare img{
+    width: 100%;   
+}
+
+.planoDayCare button{
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/*MAIN NOVO PRODUTO*/
+
+.nova-moto {
+    overflow: hidden;
+    padding: 7vh 20px 20vh 20px;
+    background-color: rgba(0, 0, 0, 0.875);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+
+}
+.nova-moto-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: unsafe;
+    width: 80%;
+}
+.nova-moto article {
+    padding: 0 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.nova-moto article h1 {
+    font-size: 3.8em;
+    font-weight: 600;
+    color: rgb(218, 74, 146);
+}
+.nova-moto article p {
+    font-size: 1.6rem;
+    color: white;
+
+}
+.nova-moto article a {
+    margin-top: 25px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.7rem;
+    transition: 0.4s;
+}
+.nova-moto article a:hover {
+    background-color: rgb(197, 47, 177);
+
+}
+.nova-moto-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:1250px) {
+
+    .nova-moto .nova-moto-text article {
+        padding: 0%;
+
+    }
+
+    .nova-moto-text {
+        width: 100%;
+    }
+
+    .nova-moto .nova-moto-text article h1 {
+        font-size: 2.4rem;
+    }
+
+    .nova-moto .nova-moto-text article p {
+        font-size: 1.5rem;
+    }
+
+    .nova-moto .nova-moto-text article a {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (max-width:360px) {
+    .nova-moto-image figure img {
+        padding-left: 37px;
+
+    }
+}
+
+
+/* DESCRIÇÃO DAYCARE */
+
+.desc-moto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4c8;
+    justify-content: center;
+}
+.desc-moto-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.desc-moto-image img {
+    position: relative;
+    top: -170px;
+}
+.desc-moto-image div {
+    padding: 60px;
+    position: relative;
+    top: -170px;
+}
+.desc-moto-image div h1 {
+    text-align: center;
+    color: rgb(204, 72, 153);
+    font-size: 3rem;
+    font-weight: 500;
+}
+.desc-moto-image div p {
+    text-align: center;
+    font-size: 2rem;
+}
+.desc-moto-section .quadradinhos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    text-align: center;
+    gap: 10px;
+    padding: 20px 0;
+    width: 200px;
+    border: 3.5px solid rgb(167, 43, 140);
+    transition: 0.5s;
+}
+.desc-moto-section .quadradinhos:hover {
+    transform: translateY(-10px);
+}
+.desc-moto-section .quadradinhos p {
+    font-size: 1.4rem;
+}
+.desc-moto-section {
+    padding: 2%;
+    position: relative;
+    top: -180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 50px;
+}
+@media screen and (max-width:700px) {
+    .desc-moto-image img {
+        width: 60vw;
+        top: -100px;
+        min-width: 300px;
+    }
+
+    .desc-moto-image div h1 {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:1000px) {
+    .desc-moto-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:630px) {
+    .desc-moto-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* CONTATO E SOBRE */
+
+.sobre-nos-img, iframe{
+    width: 40%;
+    max-width: 500px;
+    height: 45vh;
+    object-fit: cover;
+    border: 0;
+}
+
+.contato, .sobre-nos{
+    justify-content: center;
+    text-align: center;
+    margin: 15vh 0;
+}
+.texto-sobre{
+   max-width: 600px;
+    text-align: right;
+    font-size: 1.3rem;  
+}
+
+.class-contato, .class-sobre-nos{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    margin: 1rem;
+    width: 25rem;
+    padding: 3%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.inputs textarea{
+    width: 80vw;
+    max-width: 400px;
+    padding: 3%;
+    font-size: 1rem;
+    resize: none;
+}
+.contato button{
+    margin: 0.5rem 2.3rem;
+    padding: 1rem 2rem;
+    border-radius: 9px;
+    color: white;
+}
+.contato button:hover{
+    cursor: pointer;
+}
+iframe {
+    border-radius: 1rem;
+    margin: 0.7rem 0;
+    border: solid 1px rgb(197, 47, 177);
+}
+
+@media (max-width:815px) {
+    .nova-moto-image figure img {
+        width: 95vw;
+        min-width: 490px;
+    }
+
+  
+.sobre-nos-img, iframe{
+    width: 80%;
+    max-width: 500px;
+    height: 45vh;
+    object-fit: cover;
+    border: 0;
+}
+
+.contato, .sobre-nos{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.texto-sobre{
+    max-width: 80%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.class-contato, .class-sobre-nos{
+    display: flex;
+    flex-direction: column;
+}
+    
+.input{
+    width: 80vw;
+    max-width: 400px;
+}
+
+}
+
+/* BANNER PARALLAX */
+.parallax-banner {
+    height: 35vh;
+    width: 100%;
+}
+.parallax-banner section {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(assetsPet/paralax.jpg);
+}
+.parallax-banner section h1 {
+    position: absolute;
+}
+
+
+/* FOOTER / RODAPÉ */
+footer {
+    background: rgba(0, 0, 0, 0.874);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 150px;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+}
+footer h1 {
+    font-size: 5vh;
+    margin: 20px;
+    color: rgb(197, 47, 177);
+    font-weight: 500;
+}
+footer .listFooter {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 10px;
+}
+footer .listFooter h2 {
+    font-size: 2.5vh;
+    color:rgb(197, 47, 177);
+    font-weight: 500;
+}
+footer .listFooter ul {
+    list-style: none;
+}
+footer .listFooter ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.656);
+    font-size: 1.8vh;
+}
+footer .listFooter ul li a:hover {
+    text-decoration: underline;
+    color: rgb(197, 47, 177);
+
+}
+footer .redesSociais {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    margin: 20px;
+}
+footer .redesSociais div img {
+    width: 40px;
+    height: 40px;
+    transition: all .5s;
+}
+footer .redesSociais div img:hover {
+    transform: translateY(-10px);
+}
+
+ .madeby{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.906);
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+}
+
+.madeby a{
+    color: rgb(197, 47, 177);
+}
+
+@media screen and (max-width:1264px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0 60px 0;
+       
+    }
+}
